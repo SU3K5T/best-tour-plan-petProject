@@ -1,0 +1,70 @@
+*
+	box-sizing: border-box
+body
+	font-family: 'Roboto', sans-serif
+.container
+	max-width: 1140px
+	margin: auto
+.logo
+	text-decoration: none
+.info
+	margin: 0
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 130%
+	color: $info-color
+.title
+	margin: 0
+	font-style: normal
+	font-weight: normal
+	font-size: 28px
+	line-height: 130%
+
+.form
+	display: flex
+	flex-direction: column
+	// .form__button
+
+	&__button
+		margin: 0
+		max-width: 190px
+		padding: 17px 16px 17px 26px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border: none
+		outline: none
+		border-radius: 10px
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 110%
+		background-color: $button-color
+		color: $text-light
+		cursor: pointer
+		transition: 0.5s all
+		&:hover
+			background-color: $hover-first-color
+	// .form__icon
+	&__input
+		margin: 0
+		margin-bottom: 10px
+		max-width: 415px
+		padding: 17px 26px
+		outline: none
+		border: 1px solid #DCDCDC
+		border-radius: 10px
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 110%
+		transition: 0.2s all
+		&:last-of-type
+			margin-bottom: 20px
+		&:focus
+			border: 1px solid #4A48F0
+
+	input
+		&:invalid 
+			border: 1px solid #FAA5A5

@@ -1,0 +1,43 @@
+.header
+	padding: 40px 0 20px 0
+	position: fixed
+	width: 100%
+	background-color: #fff
+	z-index: 11
+	&-wrapper
+		position: relative
+		display: flex
+		justify-content: space-between
+	&__bubble
+		position: absolute
+		top: -40px
+		left: 234px
+		z-index: 12
+	&__dot
+		position: absolute
+		top: 25px
+		left: 50%
+		transform: translateY(-50%)
+		z-index: 12
+
+.navbar
+	display: flex
+	align-items: center
+	font-style: normal
+	font-weight: bold
+	font-size: 14px
+	line-height: 110%
+	text-align: right
+	color: $text-color
+	text-transform: uppercase
+	position: relative
+	z-index: 2
+	&__link
+		text-decoration: none
+		color: inherit
+		margin-right: 50px
+		transition: 0.5s all
+		&:hover
+			color: $hover-second-color
+		&:last-child
+			margin-right: 0

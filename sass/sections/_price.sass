@@ -1,0 +1,155 @@
+.price
+	padding: 0 0 50px 0
+	&-wrapper
+		display: flex
+	// .price__title
+
+	&__title
+		margin-bottom: 20px
+	// .price__info
+
+	&__info
+		margin-bottom: 20px
+	// .price__first
+
+	&__first
+		flex-basis: 66%
+		display: flex
+	// .price__power
+
+	&__power-wrapper
+		flex-basis: 90%
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		position: relative
+		&:after
+			content: ''
+			width: 98%
+			position: absolute
+			z-index: 1
+			top: 19%
+			transform: translateY(-50%)
+			border: 1px solid #DCDCDC
+	&__power
+		width: 60px
+		height: 60px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		background: #FFFFFF
+		border: 1px solid #DCDCDC
+		box-sizing: border-box
+		border-radius: 50%
+		position: relative
+		z-index: 2
+		color: $info-color
+		cursor: pointer
+		transition: 0.5s all
+		&:hover
+			border: 1px solid #4A48F0
+		&_active
+			background: #4A48F0
+			color: $text-light
+			border: 1px solid transparent
+	// .price__power-opacity
+
+	&__power-opacity
+		margin: 0
+		padding: 0
+		color: inherit
+		font-style: normal
+		font-weight: bold
+		font-size: 20px
+		line-height: 130%
+	// .price__power-info
+
+	&__power-info
+		font-style: normal
+		font-weight: normal
+		font-size: 12px
+		line-height: 130%
+		color: inherit
+	// .price__second
+
+	&__second
+		flex-basis: 34%
+		display: flex
+		align-items: center
+		justify-content: flex-end
+
+	// .price__additional
+
+	&__additional
+		margin: 0
+		padding: 0
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 130%
+		color: $info-second-color
+		margin-top: -50px
+.cost
+	transition: 0.5s all
+	display: none
+
+	// .cost_acitve
+	&_active
+		min-height: 180px
+		padding: 20px 60px 20px 70px
+		border: 1px solid #DCDCDC
+		background-color: #ffffff
+		border-radius: 15px
+		flex-basis: 95%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	// .cost__pricetag
+
+	&__pricetag
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		margin-bottom: 21px
+	// .cost__value
+
+	&__value
+		margin: 0
+		margin-right: 9px
+		padding: 0
+		font-style: normal
+		font-weight: bold
+		font-size: 50px
+		color: #4A48F0
+
+	// .cost__valuta
+
+	&__valuta
+		margin-top: 7px
+		font-style: normal
+		font-weight: normal
+		font-size: 28px
+		color: #4A48F0
+
+	// .cost__text
+
+	&__text
+		padding: 0
+		margin: 0
+		margin-bottom: 20px
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 110%
+		text-align: center
+		color: $info-color
+	// .cost__info
+
+	&__info
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 130%
+		color: $info-second-color
